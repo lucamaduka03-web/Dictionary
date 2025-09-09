@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+.container {
+  background-color: whitesmoke;
+  width: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 90px 60px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 10, 0.1);
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.search-box input {
+  padding: 12 px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid lightsteelblue;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 5px 0;
+  width: 25%;
+  background-color: lightsteelblue;
+  border: none;
+  outline: none;
+  color: #343a40;
+  border-radius: 12px;
+}
+.search-box button:hover {
+  color: #5a88ad;
+}
+.result {
+  position: relative;
+}
+.result h3 {
+  font-size: 30px;
+  color: #343a40;
+}
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.volume-btn {
+  /* Styles for the button container */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; /* Add a pointer cursor to show it's clickable */
+}
+
+/* This rule will style the icon inside the button */
+.volume-btn box-icon {
+  width: 24px;
+  height: 24px;
+  fill: lightsteelblue; /* Use 'fill' to change the icon color */
+}
+.volume-btn:hover box-icon {
+  fill: #5a88ad; /* A slightly darker shade of blue */
+}
+.result.details {
+  display: flex;
+  gap: 10px;
+  color: #5a88ad;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+.word-meaning {
+  color: #343a40;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.word-example {
+  color: #343a40;
+  font-style: italic;
+  border-left: 5px solid lightsteelblue;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
